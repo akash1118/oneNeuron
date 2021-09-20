@@ -14,3 +14,30 @@ OR,
 OR,
 
 <img src="plots/and.png" alt="Sample Image" width="500" height="600">
+
+## Python code
+
+``` python
+def main(data, eta, epochs, filename, plotFileName):
+  
+
+    df = pd.DataFrame(AND)
+    print(df)
+    X,y = prepare_data(df)
+
+    model = Perceptron(eta=eta, epochs=epochs)
+    model.fit(X, y)
+
+    _ = model.total_loss() ##Dummy variable _
+
+
+    save_model(model, filename=filename)
+    save_plot(df, plotFileName,model)
+```
+
+``` bash
+
+git add . && git commit -m "docstring updated" && git push 
+origin main
+
+```
