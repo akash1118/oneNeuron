@@ -41,3 +41,17 @@ git add . && git commit -m "docstring updated" && git push
 origin main
 
 ```
+
+## dataset
+
+x1 | x2 | y
+-|-|-
+0|0|1
+0|1|0
+1|0|0
+1|1|1
+
+        "x1": [0,0,1,1],
+        "x2": [0,1,0,1],
+        "y": [0,0,0,1],
+    
